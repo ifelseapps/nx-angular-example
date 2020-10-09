@@ -115,6 +115,56 @@
           }
         }
       }
+    },
+    "domain-user": {
+      "root": "libs/domain-user",
+      "sourceRoot": "libs/domain-user/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/domain-user/tsconfig.lib.json",
+              "libs/domain-user/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/domain-user/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/domain-user/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-auth": {
+      "root": "libs/feature-auth",
+      "sourceRoot": "libs/feature-auth/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/feature-auth/tsconfig.lib.json",
+              "libs/feature-auth/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/feature-auth/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/feature-auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

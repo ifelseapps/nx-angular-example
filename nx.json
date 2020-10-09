@@ -24,11 +24,20 @@
   },
   "projects": {
     "shop": {
-      "tags": []
+      "tags": ["scope:app"],
+      "implicitDependencies": []
     },
     "shop-e2e": {
       "tags": [],
       "implicitDependencies": ["shop"]
+    },
+    "domain-user": {
+      "tags": ["scope:domain-user"],
+      "implicitDependencies": []
+    },
+    "feature-auth": {
+      "tags": ["scope:feature-auth"],
+      "implicitDependencies": []
     }
   }
 }

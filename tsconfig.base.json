@@ -15,7 +15,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@shop/domain-user": ["libs/domain-user/src/index.ts"],
+      "@shop/feature-auth": ["libs/feature-auth/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

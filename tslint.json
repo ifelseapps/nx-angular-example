@@ -60,8 +60,16 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "scope:app",
+            "onlyDependOnLibsWithTags": ["scope:app", "scope:feature-auth"]
+          },
+          {
+            "sourceTag": "scope:domain-user",
+            "onlyDependOnLibsWithTags": ["scope:domain-user"]
+          },
+          {
+            "sourceTag": "scope:feature-auth",
+            "onlyDependOnLibsWithTags": ["scope:feature-auth", "scope:domain-user"]
           }
         ]
       }

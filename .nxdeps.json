@@ -1,0 +1,487 @@
+{
+  "graph": {
+    "nodes": {
+      "feature-auth": {
+        "name": "feature-auth",
+        "type": "lib",
+        "data": {
+          "root": "libs/feature-auth",
+          "sourceRoot": "libs/feature-auth/src",
+          "projectType": "library",
+          "schematics": {},
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/feature-auth/tsconfig.lib.json",
+                  "libs/feature-auth/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/feature-auth/**/*"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/feature-auth/jest.config.js",
+                "passWithNoTests": true
+              }
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/feature-auth/jest.config.js",
+              "hash": "b2510a593d82e750b59454e3323892874aceb572",
+              "ext": ".js"
+            },
+            {
+              "file": "libs/feature-auth/README.md",
+              "hash": "38a2c3282166cca1631bad6ffd197ea5f91eaaf9",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/feature-auth/src/index.ts",
+              "hash": "53b15e2e65ef6d38f5548e6fb6ead8439e06ade9",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/feature-auth/src/lib/auth.module.ts",
+              "hash": "b98b4a2b11aeefd92525b81dbdebb5c4daf893ac",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/feature-auth/src/lib/components/auth/auth.component.css",
+              "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+              "ext": ".css"
+            },
+            {
+              "file": "libs/feature-auth/src/lib/components/auth/auth.component.html",
+              "hash": "f66eb6959d8b2f9af127c8592efee724f0e80d39",
+              "ext": ".html"
+            },
+            {
+              "file": "libs/feature-auth/src/lib/components/auth/auth.component.spec.ts",
+              "hash": "2e9ddd95d2c4dce7b52d7eaca195aac91416e7f7",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/feature-auth/src/lib/components/auth/auth.component.ts",
+              "hash": "8bc60a76a842d07b9b9a0d75183a2752686ed75f",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/feature-auth/tsconfig.json",
+              "hash": "62ebbd946474cea997e774d20fffc4d585c184f3",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/feature-auth/tsconfig.lib.json",
+              "hash": "7096f230ed30d201c19cf716f7dd4237c3f17324",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/feature-auth/tsconfig.spec.json",
+              "hash": "559410b96af6781ac3e7cf348bf4a710b4009481",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/feature-auth/tslint.json",
+              "hash": "905c5d5e0adc870dfe21afa692cfa2fcdadf8ced",
+              "ext": ".json"
+            }
+          ]
+        }
+      },
+      "domain-user": {
+        "name": "domain-user",
+        "type": "lib",
+        "data": {
+          "root": "libs/domain-user",
+          "sourceRoot": "libs/domain-user/src",
+          "projectType": "library",
+          "schematics": {},
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/domain-user/tsconfig.lib.json",
+                  "libs/domain-user/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/domain-user/**/*"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/domain-user/jest.config.js",
+                "passWithNoTests": true
+              }
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/domain-user/jest.config.js",
+              "hash": "2076de649dfee3d9fa94d6b171aafd332cbbfb18",
+              "ext": ".js"
+            },
+            {
+              "file": "libs/domain-user/README.md",
+              "hash": "93bea7986c42581195a93f6815dd2b7bd9425895",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/domain-user/src/index.ts",
+              "hash": "ca563b50d70f95a86ac28af74a6068de0b1fe2fc",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/domain-user/src/lib/domain-user.ts",
+              "hash": "0275226942fcb5a24f7561d8e2ca9f02bcb11f89",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/domain-user/tsconfig.json",
+              "hash": "62ebbd946474cea997e774d20fffc4d585c184f3",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/domain-user/tsconfig.lib.json",
+              "hash": "7096f230ed30d201c19cf716f7dd4237c3f17324",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/domain-user/tsconfig.spec.json",
+              "hash": "559410b96af6781ac3e7cf348bf4a710b4009481",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/domain-user/tslint.json",
+              "hash": "905c5d5e0adc870dfe21afa692cfa2fcdadf8ced",
+              "ext": ".json"
+            }
+          ]
+        }
+      },
+      "shop-e2e": {
+        "name": "shop-e2e",
+        "type": "e2e",
+        "data": {
+          "root": "apps/shop-e2e",
+          "sourceRoot": "apps/shop-e2e/src",
+          "projectType": "application",
+          "architect": {
+            "e2e": {
+              "builder": "@nrwl/cypress:cypress",
+              "options": {
+                "cypressConfig": "apps/shop-e2e/cypress.json",
+                "tsConfig": "apps/shop-e2e/tsconfig.e2e.json",
+                "devServerTarget": "shop:serve"
+              },
+              "configurations": {
+                "production": {
+                  "devServerTarget": "shop:serve:production"
+                }
+              }
+            },
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "apps/shop-e2e/tsconfig.e2e.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!apps/shop-e2e/**/*"
+                ]
+              }
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "apps/shop-e2e/cypress.json",
+              "hash": "e8749ea49eae3dee9b2a0f5d7720662e38e7ed09",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/shop-e2e/src/fixtures/example.json",
+              "hash": "294cbed6ce9e0b948b787452e8676aee486cb3be",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/shop-e2e/src/integration/app.spec.ts",
+              "hash": "a096fa85044323de9a010bf35bd96a09d5e193b5",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop-e2e/src/plugins/index.js",
+              "hash": "9067e75a258dadf5a02b2a91c64f5acee1af17fd",
+              "ext": ".js"
+            },
+            {
+              "file": "apps/shop-e2e/src/support/app.po.ts",
+              "hash": "32934246969c2ecb827ac05677785933a707a54d",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop-e2e/src/support/commands.ts",
+              "hash": "36c834059c77001969bfda12889155701aaea2bb",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop-e2e/src/support/index.ts",
+              "hash": "3d469a6b6cf31eb66117d73e278bcf74f398f1db",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop-e2e/tsconfig.e2e.json",
+              "hash": "9dc3660a79ee2f6daf097b4930427223896e3b25",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/shop-e2e/tsconfig.json",
+              "hash": "08841a7f56c62d55340ad08451502304837254fd",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/shop-e2e/tslint.json",
+              "hash": "905c5d5e0adc870dfe21afa692cfa2fcdadf8ced",
+              "ext": ".json"
+            }
+          ]
+        }
+      },
+      "shop": {
+        "name": "shop",
+        "type": "app",
+        "data": {
+          "projectType": "application",
+          "schematics": {},
+          "root": "apps/shop",
+          "sourceRoot": "apps/shop/src",
+          "prefix": "shop",
+          "architect": {
+            "build": {
+              "builder": "@angular-devkit/build-angular:browser",
+              "options": {
+                "outputPath": "dist/apps/shop",
+                "index": "apps/shop/src/index.html",
+                "main": "apps/shop/src/main.ts",
+                "polyfills": "apps/shop/src/polyfills.ts",
+                "tsConfig": "apps/shop/tsconfig.app.json",
+                "aot": true,
+                "assets": [
+                  "apps/shop/src/favicon.ico",
+                  "apps/shop/src/assets"
+                ],
+                "styles": [
+                  "apps/shop/src/styles.css"
+                ],
+                "scripts": []
+              },
+              "configurations": {
+                "production": {
+                  "fileReplacements": [
+                    {
+                      "replace": "apps/shop/src/environments/environment.ts",
+                      "with": "apps/shop/src/environments/environment.prod.ts"
+                    }
+                  ],
+                  "optimization": true,
+                  "outputHashing": "all",
+                  "sourceMap": false,
+                  "extractCss": true,
+                  "namedChunks": false,
+                  "extractLicenses": true,
+                  "vendorChunk": false,
+                  "buildOptimizer": true,
+                  "budgets": [
+                    {
+                      "type": "initial",
+                      "maximumWarning": "2mb",
+                      "maximumError": "5mb"
+                    },
+                    {
+                      "type": "anyComponentStyle",
+                      "maximumWarning": "6kb",
+                      "maximumError": "10kb"
+                    }
+                  ]
+                }
+              }
+            },
+            "serve": {
+              "builder": "@angular-devkit/build-angular:dev-server",
+              "options": {
+                "browserTarget": "shop:build"
+              },
+              "configurations": {
+                "production": {
+                  "browserTarget": "shop:build:production"
+                }
+              }
+            },
+            "extract-i18n": {
+              "builder": "@angular-devkit/build-angular:extract-i18n",
+              "options": {
+                "browserTarget": "shop:build"
+              }
+            },
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "apps/shop/tsconfig.app.json",
+                  "apps/shop/tsconfig.spec.json",
+                  "apps/shop/tsconfig.editor.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!apps/shop/**/*"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "apps/shop/jest.config.js",
+                "passWithNoTests": true
+              }
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "apps/shop/.browserslistrc",
+              "hash": "0ccadaf32fba577ea99a28a0b9e8193a1fe0dac9",
+              "ext": ""
+            },
+            {
+              "file": "apps/shop/jest.config.js",
+              "hash": "44e2726393d3b1b293d418298e91b23dfb72a27c",
+              "ext": ".js"
+            },
+            {
+              "file": "apps/shop/src/app/app.component.css",
+              "hash": "f222adffa5fcd7d15966292374486ef9e173c90c",
+              "ext": ".css"
+            },
+            {
+              "file": "apps/shop/src/app/app.component.html",
+              "hash": "a505f3789f72b04bf258b23bd895c263d5aaaaa5",
+              "ext": ".html"
+            },
+            {
+              "file": "apps/shop/src/app/app.component.spec.ts",
+              "hash": "6abfa335853453767a090ed7026ecede18f64380",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop/src/app/app.component.ts",
+              "hash": "3ccb45bd237afb908784e025f8092fbff3841b4e",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop/src/app/app.module.ts",
+              "hash": "5ce7811a4c03da167bd77a37c5de07e61a488b71",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop/src/assets/.gitkeep",
+              "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+              "ext": ""
+            },
+            {
+              "file": "apps/shop/src/environments/environment.prod.ts",
+              "hash": "c9669790be176ac85a5d8c11278875c2f52dc507",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop/src/environments/environment.ts",
+              "hash": "99c3763cad6f4ae7808a34e2aa4e5b90232c67fc",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop/src/favicon.ico",
+              "hash": "317ebcb2336e0833a22dddf0ab287849f26fda57",
+              "ext": ".ico"
+            },
+            {
+              "file": "apps/shop/src/index.html",
+              "hash": "fc2c9c6fc9f624c1a950d8187eb970ea7dc311bc",
+              "ext": ".html"
+            },
+            {
+              "file": "apps/shop/src/main.ts",
+              "hash": "d9a2e7e4a582e265db779363bd8b2492c43c141b",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop/src/polyfills.ts",
+              "hash": "e49856ec90d6bf3ac29646c3755138c502b44157",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop/src/styles.css",
+              "hash": "90d4ee0072ce3fc41812f8af910219f9eea3c3de",
+              "ext": ".css"
+            },
+            {
+              "file": "apps/shop/src/test-setup.ts",
+              "hash": "8d88704e8ff09145a6310d3df98f124042268bfe",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/shop/tsconfig.app.json",
+              "hash": "e9fa6dfd9387e0a5b362098d5d6542e952fdd831",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/shop/tsconfig.editor.json",
+              "hash": "20c4afdbf437457984afcb236d4b5e588aec858a",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/shop/tsconfig.json",
+              "hash": "81cb95e9dc65c8cd62be191b296859d8ae38fd8a",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/shop/tsconfig.spec.json",
+              "hash": "cfff29a544fb49a8c26a7cbf9cd836c87efb7fe8",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/shop/tslint.json",
+              "hash": "2f5631fa6f5ea16a51da6fd5b882d5e45337fd96",
+              "ext": ".json"
+            }
+          ]
+        }
+      }
+    },
+    "dependencies": {
+      "feature-auth": [],
+      "domain-user": [],
+      "shop-e2e": [
+        {
+          "type": "implicit",
+          "source": "shop-e2e",
+          "target": "shop"
+        }
+      ],
+      "shop": []
+    }
+  },
+  "affectedProjects": [],
+  "criticalPath": []
+}
